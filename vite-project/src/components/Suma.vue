@@ -3,6 +3,10 @@
 <div class="section">
 <p>El resultado de 2+2 es: {{operation}}</p>
 
+<p>El resultado de 2+2 es: {{2+2}}</p>
+
+<p>El resultado de 2+2 es: {{functionString()}}</p>
+
 <p>El resultado de 2+2 es: {{ suma }}</p>
 
 <button @click="sumatoria">Muestra el resultado de 2+2 </button>
@@ -14,9 +18,9 @@
 import { ref } from 'vue'
 const operation = 2+2
 
+const functionString = () => "String"
+
 const suma = ref("...")
-
-
 
 function sumatoria() { suma.value = 4}
 
